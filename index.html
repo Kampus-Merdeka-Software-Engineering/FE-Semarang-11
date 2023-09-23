@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets\css\style.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,16 +34,24 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li><a href="#">Promo</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="box menu-bar">
-                <i class="ri-menu-3-fill" style="color: #efc73b;"></i>
+                    <div>
+                      <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-cloud"></i>
+                        </a>
+                      </li> -->
+                      <li><button class="button-login" onclick="redirectToLogin()"><i class="fa-solid fa-user"></i> Akun </button></li>
+                    </ul>
+                </div>
+                <div class="box menu-bar">
+                    <i class="ri-menu-3-fill" style="color: #fff;"></i>
+                </div>
             </div>
         </div>
-    </div>
-   <!--navigation-->
+
 
 <!-- ***** Main Banner Area Start ***** -->
 <section class="section main-banner" id="top" data-section="section1">
@@ -137,6 +147,11 @@
                     </div>
                     <div class="col-md-12">
                       <fieldset>
+                        <input name="password" type="password" class="form-control" id="password" placeholder="Your Password" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
                         <button type="submit" id="form-submit" class="button">Get it now</button>
                       </fieldset>
                     </div>
@@ -149,106 +164,163 @@
       </section>
 
       <!-- Card Course -->
-        <section class="section courses" data-section="section4">
-          <div class="section-heading">
+      <section class="section courses" data-section="section4">
+        <div class="section-heading">
             <h2>Choose Your Courses</h2>
+        </div>
+        <div class="card-carousel">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="../edutech/assets/images/digitalmarketing.png" alt="" class="card-image" />
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Digital Marketing</h2>
+                        <p class="description">Master organic channels and paid marketing to scale your digital business. Improve your digital channel know-how, critical thinking skills, and analytical frameworks.</p>
+                        <button class="button">Free</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <img src="../edutech/assets/images/software.png" alt="" class="card-image" />
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Software Engineer</h2>
+                        <p class="description">Pursue one of the most resilient careers in Tech as a Software Engineer with a comprehensive understanding of front-end to back-end web development.</p>
+                        <button class="button">Pay</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                  <div class="image-content">
+                    <img src="../edutech/assets/images/uiux.jpeg" alt="" class="card-image" />
+                  </div>
+                  <div class="card-content">
+                  <h2 class="name">UI/UX Designer</h2>
+                  <p class="description">Unlock your potential in the world of UI/UX design, gain essential knowledge to create outstanding user experiences, shape the digital future, and explore your creativity to the fullest.</p>
+                  <button class="button">Pay</button>
+                </div>
           </div>
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="image-content">
-                <img src="../edutech/assets/images/digitalmarketing.png" alt="" class="card-image" />
-              </div>
-              <div class="card-content">
-                <h2 class="name">Digital Marketing</h2>
-                <p class="description">Master organic channels and paid marketing to scale your digital business. Improve your digital channel know-how, critical thinking skills, and analytical frameworks.</p>
-                <button class="button">Free</button>
-              </div>
+
+          <div class="card">
+            <div class="image-content">
+              <img src="../edutech/assets/images/datascience.jpeg" alt="" class="card-image" />
             </div>
-              <div class="card">
-                <div class="image-content">
-                  <img src="../edutech/assets/images/software.png" alt="" class="card-image" />
+            <div class="card-content">
+                  <h2 class="name">Data Science</h2>
+                  <p class="description">Embark on a journey into the world of Data Science, acquire the essential skills to extract insights from data, make informed decisions, and unlock a universe of possibilities in the data-driven era.</p>
+                  <button class="button">Pay</button>
                 </div>
-                <div class="card-content">
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">Software Engineer</h2>
-                      <p class="description">Pursue one of the most resilient careers in Tech as a Software Engineer with a comprehensive understanding of front-end to back-end web development.</p>
-                      <button class="button">Pay</button>
-                    </div>
-              </div>
-              <div class="card">
-                <div class="image-content">
-                  <img src="../edutech/assets/images/uiux.jpeg" alt="" class="card-image" />
-                </div>
-                <div class="card-content">
-                    </div>
-                    <div class="card-content">
-                      <h2 class="name">UI/UX Designer</h2>
-                      <p class="description">Unlock your potential in the world of UI/UX design, gain essential knowledge to create outstanding user experiences, shape the digital future, and explore your creativity to the fullest.</p>
-                      <button class="button">Pay</button>
-                    </div>
-        </div>
-        <div class="card">
-          <div class="image-content">
-            <img src="../edutech/assets/images/datascience.jpeg" alt="" class="card-image" />
           </div>
+    <div class="card">
+      <div class="image-content">
+        <img src="../edutech/assets/images/Artificial Intelegence.jpeg" alt="" class="card-image" />
+      </div>
           <div class="card-content">
-              </div>
-              <div class="card-content">
-                <h2 class="name">Data Science</h2>
-                <p class="description">Embark on a journey into the world of Data Science, acquire the essential skills to extract insights from data, make informed decisions, and unlock a universe of possibilities in the data-driven era.</p>
-                <button class="button">Pay</button>
-              </div>
-        </div>
+            <h2 class="name">Artificial Intelligence</h2>
+            <p class="description">Dive into the exciting realm of Artificial Intelligence, acquire the knowledge and tools to create intelligent systems, solve complex problems, and shape the future through AI-driven innovation.</p>
+            <button class="button">Pay</button>
+          </div>
+    </div>
+    <div class="card">
+      <div class="image-content">
+          <img src="../edutech/assets/images/digitalmarketing.png" alt="" class="card-image" />
+      </div>
+      <div class="card-content">
+          <h2 class="name">Digital Marketing</h2>
+          <p class="description">Master organic channels and paid marketing to scale your digital business. Improve your digital channel know-how, critical thinking skills, and analytical frameworks.</p>
+          <button class="button">Free</button>
+      </div>
+  </div>
+  <div class="card">
+      <div class="image-content">
+          <img src="../edutech/assets/images/software.png" alt="" class="card-image" />
+      </div>
+      <div class="card-content">
+          <h2 class="name">Software Engineer</h2>
+          <p class="description">Pursue one of the most resilient careers in Tech as a Software Engineer with a comprehensive understanding of front-end to back-end web development.</p>
+          <button class="button">Pay</button>
+      </div>
+  </div>
+
   <div class="card">
     <div class="image-content">
-      <img src="../edutech/assets/images/Artificial Intelegence.jpeg" alt="" class="card-image" />
+      <img src="../edutech/assets/images/uiux.jpeg" alt="" class="card-image" />
     </div>
     <div class="card-content">
-        </div>
-        <div class="card-content">
-          <h2 class="name">Artificial Intelligence</h2>
-          <p class="description">Dive into the exciting realm of Artificial Intelligence, acquire the knowledge and tools to create intelligent systems, solve complex problems, and shape the future through AI-driven innovation.</p>
-          <button class="button">Pay</button>
-        </div>
+    <h2 class="name">UI/UX Designer</h2>
+    <p class="description">Unlock your potential in the world of UI/UX design, gain essential knowledge to create outstanding user experiences, shape the digital future, and explore your creativity to the fullest.</p>
+    <button class="button">Pay</button>
   </div>
+</div>
+
+<div class="card">
+<div class="image-content">
+<img src="../edutech/assets/images/datascience.jpeg" alt="" class="card-image" />
+</div>
+<div class="card-content">
+    <h2 class="name">Data Science</h2>
+    <p class="description">Embark on a journey into the world of Data Science, acquire the essential skills to extract insights from data, make informed decisions, and unlock a universe of possibilities in the data-driven era.</p>
+    <button class="button">Pay</button>
+  </div>
+</div>
+<div class="card">
+<div class="image-content">
+<img src="../edutech/assets/images/Artificial Intelegence.jpeg" alt="" class="card-image" />
+</div>
+<div class="card-content">
+<h2 class="name">Artificial Intelligence</h2>
+<p class="description">Dive into the exciting realm of Artificial Intelligence, acquire the knowledge and tools to create intelligent systems, solve complex problems, and shape the future through AI-driven innovation.</p>
+<button class="button">Pay</button>
+</div>
+</div>
+</div>
+        <div class="carousel">
+          <button class="carousel-button prev">Previous</button>
+          <button class="carousel-button next">Next</button>
         </div>
+</div>
     </section>
+
       
     <!-- Form Contact -->
       <section class="section contact" data-section="section5">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
+            <div>
               <div class="section-heading">
                 <h2>Got any admission related questions?</h2>
               </div>
-            </div>
-            <div class="col-md-6">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                    </fieldset>
+              <div class="question-form">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                      </fieldset>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                    </fieldset>
-                  </div>
+                </form>
+                <div>
+                  <img src="../edutech/assets/images/contact.png" alt="" class="img-contact"/>
                 </div>
-              </form>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -258,7 +330,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p><i class="fa fa-copyright"></i> @Copyright 2023 by Team F Group 11 Section Semarang</p>
+              <p><i class="fa fa-copyright"></i>Copyright 2023 by Team F Group 11 Section Semarang</p>
             </div>
           </div>
         </div>
@@ -267,5 +339,12 @@
     
   </body>
 <script src="assets\js\script.js"></script>
+<script src="assets/js/swipe.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+  function redirectToLogin() {
+      window.location.href = "login.html";
+  }
+</script>
   </html>
 
