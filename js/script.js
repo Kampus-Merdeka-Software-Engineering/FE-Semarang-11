@@ -72,3 +72,16 @@ menuBar.addEventListener('click', function(){
     cardContainer.scrollLeft = scrollLeft - walk;
   });
 });
+
+function login() {
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  if (email === "" || password === "") {
+      document.getElementById("message").textContent = "Email dan password harus diisi.";
+  } else if (email === "contoh@email.com" && password === "password123") {
+      document.getElementById("message").textContent = "Login berhasil!";
+  } else {
+      document.getElementById("message").textContent = "Email atau password salah.";
+  }
+}
