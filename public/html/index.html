@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>MasterMind</title>
+
+    </head>
+<body>
+
+  <header>
+  <!--navigation-->
+  <section class="navigation">
+    <div class="container">
+        <div class="box-navigation">
+            <div class="box">
+                <h1>
+                    <img src="images/logo.png" style="width:200px;height:200px;padding-top: 20px;">
+                </h1>
+            </div>
+            <div class="box menu-navigation">
+              <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="html/about-us.html">About</a></li>
+                    <li><a href="html/Promo.html">Promo</a></li>
+                    <li><a href="html/Courses.html">Courses</a></li>
+                    <li><a href="html/Contact.html">Contact</a></li>
+                    <div>
+                      <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="fas fa-cloud"></i>
+                        </a>
+                      </li> -->
+                      <li><button class="button-login" onclick="redirectToLogin()"><i class="fa-solid fa-user"></i> Akun </button></li>
+                    </ul>
+                </div>
+                <div class="box menu-bar">
+                    <i class="ri-menu-3-fill" style="color: #fff;"></i>
+                </div>
+            </div>
+        </div>
+
+
+<!-- ***** Main Banner Area Start ***** -->
+<section class="section main-banner" id="top" data-section="section1">
+            <video autoplay muted loop id="bg-video">
+                <source src="images/course-video.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-overlay header-text">
+                <div class="container">
+                    <div class="caption">
+                        <h6>Unlock Your Potential in the Digital World</h6>
+                        <h2><em>Explore</em> Our Courses</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+  <!--about-->
+    <section id="about-container">
+      <div class="about-img">
+        <img src="images/about.png" alt="">
+    </div>
+    <div class="about-text">
+      <h2>Wecome to MisterMind, Advance Your Career with MisterMind</h2>
+      <p>"MasterMind" can also be used more broadly to describe someone who is an expert or highly skilled in a particular field or activity. For instance, you might hear someone referred to as the "mastermind" of a successful project or as a mastermind in a specific industry, indicating their high level of knowledge and expertise.</p>
+      <div class="about-fe">
+          <img src="images/service-icon-01.png" alt="">
+          <div class="fe-text">
+              <h5>Limitless Innovation:</h5>
+              <p>We stay up-to-date with the latest advancements in technology and industries to provide you with relevant and current insights.</p>
+          </div>
+      </div>
+      <div class="about-fe">
+          <img src="images/service-icon-02.png" alt="">
+          <div class="fe-text">
+              <h5>Unmatched Quality</h5>
+              <p>Gain in-depth knowledge and practical skills that will help you achieve your career goals.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Form -->
+    <section class="section coming-soon" data-section="section3">
+        <div class="container">
+          <div class="row">
+            <div class="Roww">
+              <div class="continer centerIt">
+                <div>
+                  <h4>Take <em>any online course</em> and get 50% discount for your next class</h4>
+                  <div id="counter" class="counter">
+                      <div class="days">
+                        <div class="value">00</div>
+                        <span>Days</span>
+                      </div>
+                    
+                      <div class="hours">
+                        <div class="value">00</div>
+                        <span>Hours</span>
+                      </div>
+                    
+                      <div class="minutes">
+                        <div class="value">00</div>
+                        <span>Minutes</span>
+                      </div>
+                    
+                      <div class="seconds">
+                        <div class="value">00</div>
+                        <span>Seconds</span>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="right-content">
+                <div class="top-content">
+                  <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
+                </div>
+                <form id="contact" action="" method="get">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="" autocomplete="name">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="" autocomplete="email">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="" autocomplete="tel">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">Get it now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Course -->
+      <section class="section courses" data-section="section4">
+        <div class="section-heading">
+            <h2>Choose Your Courses</h2>
+        </div>
+        <div class="card-carousel">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <img src="images/digitalmarketing.png" alt="" class="card-image" />
+                    </div>
+                    <div class="card-content" onclick="window.location.href='html/coursesdetail.html';">
+                        <h2 class="name">Digital Marketing</h2>
+                        <p class="description">Master organic channels and paid marketing to scale your digital business. Improve your digital channel know-how, critical thinking skills, and analytical frameworks.</p>
+                        <button class="button">Free</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <img src="images/software.png" alt="" class="card-image" />
+                    </div>
+                    <div class="card-content" onclick="window.location.href='html/coursesdetail2.html';">
+                        <h2 class="name">Software Engineer</h2>
+                        <p class="description">Pursue one of the most resilient careers in Tech as a Software Engineer with a comprehensive understanding of front-end to back-end web development.</p>
+                        <button class="button">Pay</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                  <div class="image-content">
+                    <img src="images/uiux.jpeg" alt="" class="card-image" />
+                  </div>
+                  <div class="card-content" onclick="window.location.href='html/coursedetail3.html';">
+                  <h2 class="name">UI/UX Designer</h2>
+                  <p class="description">Unlock your potential in the world of UI/UX design, gain essential knowledge to create outstanding user experiences, shape the digital future, and explore your creativity to the fullest.</p>
+                  <button class="button">Pay</button>
+                </div>
+          </div>
+    
+          <div class="card">
+            <div class="image-content">
+              <img src="images/datascience.jpeg" alt="" class="card-image" />
+            </div>
+            <div class="card-content" onclick="window.location.href='html/coursedetail4.html';">
+                  <h2 class="name">Data Science</h2>
+                  <p class="description">Embark on a journey into the world of Data Science, acquire the essential skills to extract insights from data, make informed decisions, and unlock a universe of possibilities in the data-driven era.</p>
+                  <button class="button">Pay</button>
+                </div>
+          </div>
+    <div class="card">
+      <div class="image-content">
+        <img src="images/Artificial Intelegence.jpeg" alt="" class="card-image" />
+      </div>
+      <div class="card-content" onclick="window.location.href='html/coursesdetail5.html';">
+            <h2 class="name">Artificial Intelligence</h2>
+            <p class="description">Dive into the exciting realm of Artificial Intelligence, acquire the knowledge and tools to create intelligent systems, solve complex problems, and shape the future through AI-driven innovation.</p>
+            <button class="button">Pay</button>
+          </div>
+    </div>
+    
+    </div>
+    </div>
+        <div class="carousel">
+          <button class="carousel-button prev">Previous</button>
+          <button class="carousel-button next">Next</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="our-team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="section-heading">
+              <h6>Our Team</h6>
+              <h4>Our Team <em>Members</em></h4>
+            </div>
+          </div>
+          <div class="col-lg-10 offset-lg-1">
+            <div class="naccs">
+              <div class="tabs">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="menu">
+                      <div class="active">
+                        <img src="images/Hana Farahdiana.jpg" alt="">
+                        <h4>Hana Farahdiana</h4>
+                        <span>Project Leader</span>
+                      </div>
+                      <div>
+                        <img src="images/syalva.jpg" alt="">
+                        <h4>Syalva Syadila</h4>
+                        <span>Front End</span>
+                      </div>
+                      <div>
+                        <img src="images/rifqi arief.jpeg" alt="">
+                        <h4>Rifqi Arief</h4>
+                        <span>Front End</span>
+                      </div>
+                      <div>
+                        <img src="images/Fathan surya sofyan.jpg" alt="">
+                        <h4>Fathan Surya</h4>
+                        <span>Back End</span>
+                      </div>
+                      <div>
+                        <img src="images/Sinariati Telaumbenua.jpg" alt="">
+                        <h4>Sinariati Telaumbenua</h4>
+                        <span>Quality Assurance</span>
+                      </div>
+                      <div>
+                        <img src="images/Putri dylon balla salsabillah.jpeg" alt="">
+                        <h4>Putri Dylon</h4>
+                        <span>Quality Assurance</span>
+                      </div>
+                    </div>
+                  </div>
+    </section>
+
+
+    <!-- Form Contact -->
+      <section class="section contact" data-section="section5">
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="section-heading">
+                <h2>Got any admission related questions?</h2>
+              </div>
+              <div class="question-form">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="" autocomplete="name">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="" autocomplete="email">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+                <div>
+                  <img src="images/contact.png" alt="" class="img-contact"/>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+              
+      <footer>
+        <div class="footer">
+            <h3>About</h3>
+            <li>FAQ</li>
+            <li>Career</li>
+            <li>Blog</li>
+            <li>Privacy Police</li>
+        </div>
+        <div class="footer">
+            <h3>Top Course</h3>
+            <li>Digital Marketing</li>
+            <li>UI/UX Designer</li>
+            <li>Software Engineer</li>
+            <li>Data Science</li>
+        </div>
+        <div class="footer">
+            <h3>Features</h3>
+            <li>Power Tools</li>
+            <li>Help</li>
+            <li>Promo</li>
+        </div>
+        <div class="footer">
+            <h3>Resources</h3>
+            <li>MisterMind Tour</li>
+            <li>Research</li>
+            <li>Expert</li>
+    
+        </div>
+        <div class="copyright">
+          <p>Copyright ©2023 Team F Group 11 Section Semarang. All rights reserved</p>
+          <div class="pro-links">
+            <p>Follow us for more information</p>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-twitter"></i>
+          </div>
+      </div>
+    </footer> 
+    </body>
+    <script src="script.js"></script>
+    <script src="swipe.js"></script>
+    <script>
+    function redirectToLogin() {
+    window.location.href = "login.html";
+    }
+    </script>
+    </html>
+

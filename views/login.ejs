@@ -1,0 +1,73 @@
+<!-- Konten halaman login -->
+<section>
+  <!-- Konten halaman login -->
+  <div class="Login1">
+    <form id="login">
+      <div class="Login">
+        <h1>Welcome to Mister Mind</h1>
+        <h5>Sign in to continue</h5>
+        <div class="login">
+          <fieldset>
+            <input
+              name="email"
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+              required=""
+              autocomplete="email"
+            />
+          </fieldset>
+        </div>
+        <div class="login">
+          <fieldset>
+            <input
+              name="password"
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Your Password"
+              required=""
+              autocomplete="current-password"
+            />
+          </fieldset>
+        </div>
+        <button type="submit" id="form-submit" class="button">Login</button>
+        <!-- <button class="button" onclick="login()">Login</button> -->
+        <p id="message"></p>
+        <!-- Add the registration link below -->
+        <p class="dont-have-account">
+          Don't have any account?
+          <a class="register-link" href="/promo">Register now</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- Konten halaman login -->
+
+<script>
+  const loginForm = document.getElementById("login");
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let loginEmail = document.querySelector('input[name="email"]').value;
+    let loginPassword = document.querySelector('input[name="password"]').value;
+
+    fetch("http://localhost:3001/api/logins", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email: loginEmail,
+        password: loginPassword,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert(data.message);
+        window.location.href = "/";
+      })
+      .catch((e) => console.error(e));
+  });
+</script>

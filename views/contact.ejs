@@ -1,0 +1,111 @@
+<!-- Form Contact -->
+<section class="section contact" data-section="section5">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="section-heading">
+          <h2>Got any admission related questions?</h2>
+        </div>
+        <div class="question-form">
+          <form id="contact" action="/contact" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <fieldset>
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required=""
+                  />
+                </fieldset>
+              </div>
+              <div class="col-md-6">
+                <fieldset>
+                  <input
+                    name="email"
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required=""
+                  />
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea
+                    name="message"
+                    rows="6"
+                    class="form-control"
+                    id="message"
+                    placeholder="Your message..."
+                    required=""
+                  ></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">
+                    Send Message Now
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+          <div>
+            <img src="/img/contact.png" alt="" class="img-contact" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Form Contact -->
+
+<!-- Axios -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<!-- End Axios -->
+
+<script>
+  const contactForm = document.getElementById("contact");
+
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let contactName = document.querySelector('input[name="name"]').value;
+    let contactEmail = document.querySelector('input[name="email"]').value;
+    let contactMessage = document.querySelector(
+      'textarea[name="message"]'
+    ).value;
+
+    fetch("http://localhost:3001/api/contacts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: contactName,
+        email: contactEmail,
+        message: contactMessage,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        alert(data.message);
+        window.location.href = "/";
+      })
+      .catch((e) => console.error(e));
+
+    // axios
+    //   .post("http://localhost:3001/api/contacts", {
+    //     name: contactName,
+    //     email: contactEmail,
+    //     message: contactMessage,
+    //   })
+    //   .then((res) => {
+    //     alert(res.data.message);
+    //     window.location.href = "/";
+    //   })
+    //   .catch((e) => console.error(e));
+  });
+</script>
